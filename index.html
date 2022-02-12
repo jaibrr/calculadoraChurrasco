@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Churrascometro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <!--área de texto e imagem-->
+            <div class="text-content">
+                <h1>Calcule quanta comida e bebida vai precisar</h1>
+                <img img="./img/pqnq.png">
+            </div>
+            <!--área de cálculo-->
+            <div class="form">
+                <div class="input-block">
+                    <label for="mulheres">Quantidade de mulheres</label>
+                    <input class="input" id="women" name="women" types="number" placeholder="Mulher">
+                </div>
+                <div class="input-block">
+                    <label for="homens">Quantidade de homens</label>
+                    <input class="input" id="men" name="men" types="number" placeholder="Homem">
+                </div>
+                <div class="input-block">
+                    <label for="criancas">Quantidade de crianças</label>
+                    <input class="input" id="kids" name="kids" types="number" placeholder="Crianças">
+                </div>                
+                <div class="input-block">
+                    <button class="button" onclick="calc()">Calcular</button>
+                </div>
+            </div>
+            <div class="result"></div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
