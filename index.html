@@ -13,27 +13,30 @@
             <!--área de texto e imagem-->
             <div class="text-content">
                 <h1>Calcule quanta comida e bebida vai precisar</h1>
-                <img img="./img/pqnq.png">
+                <img img="./img/img.svg">
             </div>
             <!--área de cálculo-->
-            <div class="form">
-                <div class="input-block">
-                    <label for="mulheres">Quantidade de mulheres</label>
-                    <input class="input" id="women" name="women" types="number" placeholder="Mulher">
+            <div class="box-calculo">
+                <div class="form">
+                    <div class="input-block">
+                        <label for="mulheres">Quantidade de mulheres</label>
+                        <input class="input" id="women" name="women" types="number" placeholder="Mulher">
+                    </div>
+                    <div class="input-block">
+                        <label for="homens">Quantidade de homens</label>
+                        <input class="input" id="men" name="men" types="number" placeholder="Homem">
+                    </div>
+                    <div class="input-block">
+                        <label for="criancas">Quantidade de crianças</label>
+                        <input class="input" id="kids" name="kids" types="number" placeholder="Crianças">
+                    </div>                
+                    <div class="input-block">
+                        <button class="button" onclick="calc()">Calcular</button>
+                    </div>
                 </div>
-                <div class="input-block">
-                    <label for="homens">Quantidade de homens</label>
-                    <input class="input" id="men" name="men" types="number" placeholder="Homem">
-                </div>
-                <div class="input-block">
-                    <label for="criancas">Quantidade de crianças</label>
-                    <input class="input" id="kids" name="kids" types="number" placeholder="Crianças">
-                </div>                
-                <div class="input-block">
-                    <button class="button" onclick="calc()">Calcular</button>
-                </div>
+                <div id="result"></div>
             </div>
-            <div class="result"></div>
+        </div>
     </div>
 
     <script src="./scripts/script.js"></script>
