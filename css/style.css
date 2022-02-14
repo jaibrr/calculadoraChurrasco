@@ -13,7 +13,7 @@ head{
 .container{
     max-width: 100%;
     max-height: 100%;
-    background: grey;
+    background: rgb(141, 189, 196);
 }
 
 .text-content {
@@ -27,56 +27,33 @@ head{
 }
 
 .text-content h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     width: 50rem;
-    padding: 20px;
-    display: block;
-    font-size: 2em;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-bottom: 2rem;
     font-weight: bold;
+    font-family: "Poppins", sans-serif;
 }
 
-@media (min-width: 700px){
-
-    
-* {
-    overflow: hidden;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: 0;
-}
-
-.box-calculo {
-    height: 100vh;
-    background: aliceblue;
-    border-radius: 4rem 0 0 4rem;
+.form img {
+    max-width: 20%;
     display: flex;
     align-items: center;
-    flex-direction: column;
-}
-
-.form {
-    margin-top: 2rem;
-    width: 70%;
-}
+    margin-bottom: 2rem;
+    margin-left: 40%;
 
 }
 
 .form .input-block {
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .form label {
     font-family: "Poppins", sans-serif;
     margin-bottom: 0.5rem;
+    font-size: 1.5rem;
 }
 
 .form input {
@@ -87,9 +64,10 @@ head{
         box-sizing: border-box;
         border-radius: 0.8rem;
         text-align: center;
+        font-size: 1rem;
 }
 
-.button{
+.box-calculo .button{
     width: 18.8rem;
     height: 5.7rem;
     background: #1f8fda;
@@ -100,20 +78,10 @@ head{
     margin-top: 1rem;
     cursor: pointer;
     transition: background 0.2s;
+    font-size: 1.5rem;
 }
 
-/* #result{
-    display: block; 
-    margin: auto;
-    text-align: center;
-    color: black;
-    background-color: rgb(221, 199, 199);
-    max-width: 200px;
-    border-radius: 10px;
-    padding: 5px;
-    margin-top: 10px;
-}
- */
+
 .result-info {
     font-family: "Poppins", sans-serif;
     text-align: center;
@@ -128,3 +96,33 @@ head{
     margin: 0.5rem;
     text-align: center;
 }
+
+@media (min-width: 700px){
+   
+    * {
+        overflow: hidden;
+    }
+    
+    .grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 0;
+    }
+    
+    .box-calculo {
+        height: 100vh;
+        background: aliceblue;
+        border-radius: 4rem 0 0 4rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .form {
+        margin-top: 2rem;
+        width: 70%;
+    }
+    
+    
+    }
+    
