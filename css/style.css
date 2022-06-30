@@ -26,13 +26,6 @@ head{
     max-width: 100%;
 }
 
-.text-content h1 {
-    font-size: 3rem;
-    width: 50rem;
-    margin-bottom: 2rem;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-}
 
 .form img {
     max-width: 20%;
@@ -53,12 +46,12 @@ head{
 .form label {
     font-family: "Poppins", sans-serif;
     margin-bottom: 0.5rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .form input {
         width: 18.8rem;
-        height: 3rem;
+        height: 4rem;
         background: #fafafc;
         border: 0.1rem solid #e6e6f0;
         box-sizing: border-box;
@@ -103,6 +96,13 @@ head{
         overflow: hidden;
     }
     
+    .text-content h1 {
+        width: 35rem;
+        margin-bottom: 1rem;
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+    }
+
     .grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -123,6 +123,20 @@ head{
         width: 70%;
     }
     
+    .result-info {
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        color: #000;
+        width: 0 auto;
+        margin-top: 0.5rem;
+    }
+    
+    .result-block {
+        display: flex;
+        align-items: center;
+        margin: 0.5rem;
+        text-align: center;
+    }
     
     }
     
