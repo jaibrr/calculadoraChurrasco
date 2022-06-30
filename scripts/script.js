@@ -62,12 +62,12 @@ function calc(){
     let men = inputMen.value
     let kids = inputKids.value
 
-    let qtyMeat = women * wonMeat + men * menMeat + kids * wonMeat/2
-    let qtyBeer = women * wonBeer + men * menBeer
-    let qtyNoAlc = women * wonNoAlc + men * menNoAlc + kids * wonNoAlc/2
-    let qtySide = women * side + men * side + kids * side
+    let qtyMeat = Math.round(women * wonMeat + men * menMeat + kids * wonMeat/2,2)
+    let qtyBeer = Math.round(women * wonBeer + men * menBeer)
+    let qtyNoAlc = Math.round(women * wonNoAlc + men * menNoAlc + kids * wonNoAlc/2)
+    let qtySide = Math.round(women * side + men * side + kids * side)
 
-    result.innerHTML = `<h2 class="result-info">Você vai precisar de:</h2>`
+    result.innerHTML = `<h3 class="result-info">Você vai precisar de:</h3>`
     result.innerHTML += `<div class="result-block"><p> ${qtyMeat} kg de carne</p></div>`
     result.innerHTML += `<div class="result-block"><p> ${qtyBeer} litros de cerveja</p></div>`
     result.innerHTML += `<div class="result-block"><p>${qtyNoAlc} litros de bebidas não alcoolica</p></div>`
